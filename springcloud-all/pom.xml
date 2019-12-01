@@ -22,6 +22,7 @@
         <module>eureka-server</module>
         <module>eureka-client-user</module>
         <module>eureka-client-movie</module>
+        <module>eureka-client-movie-feign</module>
     </modules>
 
     <properties>
@@ -56,6 +57,11 @@
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+                <version>${spring-cloud-netflix.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-starter-openfeign</artifactId>
                 <version>${spring-cloud-netflix.version}</version>
             </dependency>
             <dependency>
